@@ -16,8 +16,8 @@ DEBUG = env.bool('DEBUG', default=False)
 
 ALLOWED_HOSTS = [
     '158.160.14.199',
-    '127.0.0.1',
     'localhost',
+    '127.0.0.1',
     'svyat94kittygram.ddns.net'
 ]
 
