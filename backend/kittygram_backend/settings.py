@@ -1,7 +1,7 @@
 import os
-import environ
 from pathlib import Path
 
+import environ
 from dotenv import load_dotenv
 
 env = environ.Env()
@@ -84,7 +84,8 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.' \
+            'UserAttributeSimilarityValidator',
     },
     {
         'NAME':
