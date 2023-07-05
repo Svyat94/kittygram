@@ -10,8 +10,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '158.160.14.199',
-    'localhost',
     '127.0.0.1',
+    'localhost',
     'svyat94kittygram.ddns.net'
 ]
 
