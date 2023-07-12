@@ -9,8 +9,8 @@ SECRET_KEY = "django-insecure-cg6*\
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1',
     '158.160.14.199',
+    '127.0.0.1',
     'localhost',
     'svyat94kittygram.ddns.net'
 ]
