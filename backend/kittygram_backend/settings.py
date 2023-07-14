@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-import environ
 
+import environ
 from dotenv import load_dotenv
 
 env = environ.Env()
