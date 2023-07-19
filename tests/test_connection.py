@@ -40,7 +40,10 @@ def _make_safe_request(link: str, stream: bool = False) -> requests.Response:
         raise AssertionError(
             f'Убедитесь, что настроили шифрование для `{link}`.'
         )
-    
+    except requests.exceptions.ConnectionError:
+        raise AssertionError(
+            f'Убедитесь, что URL `{link}` доступен.'
+        )
     expected_status = HTTPStatus.OK
     assert response.status_code == expected_status, (
         f'Убедитесь, что GET-запрос к `{link}` возвращает ответ со статусом '
