@@ -15,13 +15,11 @@ services:
     image: svyat94/kittygram_backend
     env_file: .env
     volumes:
-      - static:/static
-      - media:/app/media
-    depends_on:
-      - db
+      - static:/static/
+      - media:/app/media/
   frontend:
-    image: svyat94/kittygram_frontend
     env_file: .env
+    image: svyat94/kittygram_frontend
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
@@ -32,4 +30,4 @@ services:
       - 9000:80
     volumes:
       - static:/static
-      - media:/media
+      - media:/app/media/
